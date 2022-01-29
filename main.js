@@ -11,10 +11,10 @@ function setup() {
 	canvas = createCanvas(1240,336);
 	canvas.parent('canvas')
 	instializeInSetup(mario);
-	webcam = createCapture(VIDEO)
-	webcam.size(600,300)
-	webcam.parent('game_console')
-	load = ml5.poseNet(webcam,modelLoaded)
+	video = createCapture(VIDEO)
+	video.size(600,300)
+	video.parent('game_console')
+	load = ml5.poseNet(video,modelLoaded)
 	load.on('pose', gotResults)
 }
 
