@@ -38,7 +38,7 @@ h4{
   width: 45%;
 }
 
-webcam{
+video{
   background:url('game_console.png');
   background-size: cover;
   background-position: center;
